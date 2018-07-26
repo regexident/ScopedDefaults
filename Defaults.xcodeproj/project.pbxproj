@@ -117,7 +117,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -126,7 +126,6 @@
 				BF0A497D2108D79D0083EDF8 /* Configs */,
 				OBJ_14 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -224,7 +223,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -308,6 +307,7 @@
 		};
 		OBJ_20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0A497E2108D79D0083EDF8 /* Universal.xcconfig */;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -425,7 +425,6 @@
 		};
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF0A497E2108D79D0083EDF8 /* Universal.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
