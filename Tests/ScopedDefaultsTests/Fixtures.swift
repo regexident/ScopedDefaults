@@ -1,13 +1,6 @@
-//
-//  Fixtures.swift
-//  Defaults
-//
-//  Created by Vincent Esche on 7/25/18.
-//
-
 import Foundation
 
-@testable import Defaults
+@testable import ScopedDefaults
 
 enum Defaults: EnumerableUserDefaultsScope {
     public typealias Default<Value: Codable> = ScopedUserDefault<Defaults, Value>

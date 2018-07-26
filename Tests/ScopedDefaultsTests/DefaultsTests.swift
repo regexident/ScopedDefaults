@@ -1,6 +1,6 @@
 import XCTest
 
-@testable import Defaults
+@testable import ScopedDefaults
 
 final class DefaultsTests: XCTestCase {
     static let userDefaultsSuiteName = "DefaultsTests"

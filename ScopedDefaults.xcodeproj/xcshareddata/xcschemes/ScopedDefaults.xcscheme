@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BF23AA4E210A114F0039834F"
-               BuildableName = "libDefaults.a"
-               BlueprintName = "Defaults (Static)"
-               ReferencedContainer = "container:Defaults.xcodeproj">
+               BlueprintIdentifier = "Defaults::Defaults"
+               BuildableName = "ScopedDefaults.framework"
+               BlueprintName = "ScopedDefaults"
+               ReferencedContainer = "container:ScopedDefaults.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +28,24 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Defaults::DefaultsTests"
+               BuildableName = "ScopedDefaultsTests.xctest"
+               BlueprintName = "ScopedDefaultsTests"
+               ReferencedContainer = "container:ScopedDefaults.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BF23AA4E210A114F0039834F"
-            BuildableName = "libDefaults.a"
-            BlueprintName = "Defaults (Static)"
-            ReferencedContainer = "container:Defaults.xcodeproj">
+            BlueprintIdentifier = "Defaults::Defaults"
+            BuildableName = "ScopedDefaults.framework"
+            BlueprintName = "ScopedDefaults"
+            ReferencedContainer = "container:ScopedDefaults.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -54,10 +64,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BF23AA4E210A114F0039834F"
-            BuildableName = "libDefaults.a"
-            BlueprintName = "Defaults (Static)"
-            ReferencedContainer = "container:Defaults.xcodeproj">
+            BlueprintIdentifier = "Defaults::Defaults"
+            BuildableName = "ScopedDefaults.framework"
+            BlueprintName = "ScopedDefaults"
+            ReferencedContainer = "container:ScopedDefaults.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -72,10 +82,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BF23AA4E210A114F0039834F"
-            BuildableName = "libDefaults.a"
-            BlueprintName = "Defaults (Static)"
-            ReferencedContainer = "container:Defaults.xcodeproj">
+            BlueprintIdentifier = "Defaults::Defaults"
+            BuildableName = "ScopedDefaults.framework"
+            BlueprintName = "ScopedDefaults"
+            ReferencedContainer = "container:ScopedDefaults.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

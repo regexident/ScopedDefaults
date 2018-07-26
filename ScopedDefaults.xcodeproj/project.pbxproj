@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		"Defaults::DefaultsPackageTests::ProductTarget" /* Defaults (Tests) */ = {
+		"Defaults::DefaultsPackageTests::ProductTarget" /* ScopedDefaults (Tests) */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_31 /* Build configuration list for PBXAggregateTarget "Defaults (Tests)" */;
+			buildConfigurationList = OBJ_31 /* Build configuration list for PBXAggregateTarget "ScopedDefaults (Tests)" */;
 			buildPhases = (
 			);
 			dependencies = (
 				OBJ_34 /* PBXTargetDependency */,
 			);
-			name = "Defaults (Tests)";
+			name = "ScopedDefaults (Tests)";
 			productName = DefaultsPackageTests;
 		};
 /* End PBXAggregateTarget section */
@@ -31,7 +31,7 @@
 		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_40 /* DefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DefaultsTests.swift */; };
 		OBJ_41 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
-		OBJ_43 /* Defaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Defaults::Defaults::Product" /* Defaults.framework */; };
+		OBJ_43 /* ScopedDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Defaults::Defaults::Product" /* ScopedDefaults.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +68,10 @@
 		BF0A49752108BCD80083EDF8 /* UserDefaultsScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsScope.swift; sourceTree = "<group>"; };
 		BF0A49772108C2710083EDF8 /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
 		BF0A497E2108D79D0083EDF8 /* Universal.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Universal.xcconfig; sourceTree = "<group>"; };
-		BF23AA4F210A114F0039834F /* libDefaults.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDefaults.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF23AA6F210A1CC70039834F /* Defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Defaults.plist; path = Defaults.xcodeproj/Defaults.plist; sourceTree = SOURCE_ROOT; };
-		"Defaults::Defaults::Product" /* Defaults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Defaults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Defaults::DefaultsTests::Product" /* DefaultsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = DefaultsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF23AA4F210A114F0039834F /* libScopedDefaults.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libScopedDefaults.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF23AA6F210A1CC70039834F /* ScopedDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ScopedDefaults.plist; path = ScopedDefaults.xcodeproj/ScopedDefaults.plist; sourceTree = SOURCE_ROOT; };
+		"Defaults::Defaults::Product" /* ScopedDefaults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ScopedDefaults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Defaults::DefaultsTests::Product" /* ScopedDefaultsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ScopedDefaultsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* DefaultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_43 /* Defaults.framework in Frameworks */,
+				OBJ_43 /* ScopedDefaults.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,34 +110,34 @@
 				BF0A497E2108D79D0083EDF8 /* Universal.xcconfig */,
 			);
 			name = Configs;
-			path = Defaults.xcodeproj/Configs;
+			path = ScopedDefaults.xcodeproj/Configs;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_11 /* DefaultsTests */,
+				OBJ_11 /* ScopedDefaultsTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_11 /* DefaultsTests */ = {
+		OBJ_11 /* ScopedDefaultsTests */ = {
 			isa = PBXGroup;
 			children = (
 				BF0A49772108C2710083EDF8 /* Fixtures.swift */,
 				OBJ_12 /* DefaultsTests.swift */,
 				OBJ_13 /* XCTestManifests.swift */,
 			);
-			name = DefaultsTests;
-			path = Tests/DefaultsTests;
+			name = ScopedDefaultsTests;
+			path = Tests/ScopedDefaultsTests;
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_14 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"Defaults::DefaultsTests::Product" /* DefaultsTests.xctest */,
-				"Defaults::Defaults::Product" /* Defaults.framework */,
-				BF23AA4F210A114F0039834F /* libDefaults.a */,
+				"Defaults::DefaultsTests::Product" /* ScopedDefaultsTests.xctest */,
+				"Defaults::Defaults::Product" /* ScopedDefaults.framework */,
+				BF23AA4F210A114F0039834F /* libScopedDefaults.a */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -148,7 +148,7 @@
 				OBJ_7 /* Sources */,
 				OBJ_10 /* Tests */,
 				OBJ_6 /* Package.swift */,
-				BF23AA6F210A1CC70039834F /* Defaults.plist */,
+				BF23AA6F210A1CC70039834F /* ScopedDefaults.plist */,
 				BF0A497D2108D79D0083EDF8 /* Configs */,
 				OBJ_14 /* Products */,
 			);
@@ -157,28 +157,28 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* Defaults */,
+				OBJ_8 /* ScopedDefaults */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_8 /* Defaults */ = {
+		OBJ_8 /* ScopedDefaults */ = {
 			isa = PBXGroup;
 			children = (
 				BF0A49752108BCD80083EDF8 /* UserDefaultsScope.swift */,
 				BF0A49732108BCBB0083EDF8 /* UserDefault.swift */,
 				OBJ_9 /* UserDefaults+Extensions.swift */,
 			);
-			name = Defaults;
-			path = Sources/Defaults;
+			name = ScopedDefaults;
+			path = Sources/ScopedDefaults;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BF23AA4E210A114F0039834F /* Defaults (Static) */ = {
+		BF23AA4E210A114F0039834F /* ScopedDefaults (Static) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF23AA53210A114F0039834F /* Build configuration list for PBXNativeTarget "Defaults (Static)" */;
+			buildConfigurationList = BF23AA53210A114F0039834F /* Build configuration list for PBXNativeTarget "ScopedDefaults (Static)" */;
 			buildPhases = (
 				BF23AA4B210A114F0039834F /* Sources */,
 				BF23AA4C210A114F0039834F /* Frameworks */,
@@ -188,14 +188,14 @@
 			);
 			dependencies = (
 			);
-			name = "Defaults (Static)";
+			name = "ScopedDefaults (Static)";
 			productName = "Defaults (Static)";
-			productReference = BF23AA4F210A114F0039834F /* libDefaults.a */;
+			productReference = BF23AA4F210A114F0039834F /* libScopedDefaults.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		"Defaults::Defaults" /* Defaults */ = {
+		"Defaults::Defaults" /* ScopedDefaults */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_18 /* Build configuration list for PBXNativeTarget "Defaults" */;
+			buildConfigurationList = OBJ_18 /* Build configuration list for PBXNativeTarget "ScopedDefaults" */;
 			buildPhases = (
 				OBJ_21 /* Sources */,
 				OBJ_23 /* Frameworks */,
@@ -204,14 +204,14 @@
 			);
 			dependencies = (
 			);
-			name = Defaults;
+			name = ScopedDefaults;
 			productName = Defaults;
-			productReference = "Defaults::Defaults::Product" /* Defaults.framework */;
+			productReference = "Defaults::Defaults::Product" /* ScopedDefaults.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"Defaults::DefaultsTests" /* DefaultsTests */ = {
+		"Defaults::DefaultsTests" /* ScopedDefaultsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "DefaultsTests" */;
+			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "ScopedDefaultsTests" */;
 			buildPhases = (
 				OBJ_39 /* Sources */,
 				OBJ_42 /* Frameworks */,
@@ -221,14 +221,14 @@
 			dependencies = (
 				OBJ_44 /* PBXTargetDependency */,
 			);
-			name = DefaultsTests;
+			name = ScopedDefaultsTests;
 			productName = DefaultsTests;
-			productReference = "Defaults::DefaultsTests::Product" /* DefaultsTests.xctest */;
+			productReference = "Defaults::DefaultsTests::Product" /* ScopedDefaultsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		"Defaults::SwiftPMPackageDescription" /* Defaults (Package Description) */ = {
+		"Defaults::SwiftPMPackageDescription" /* ScopedDefaults (Package Description) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_25 /* Build configuration list for PBXNativeTarget "Defaults (Package Description)" */;
+			buildConfigurationList = OBJ_25 /* Build configuration list for PBXNativeTarget "ScopedDefaults (Package Description)" */;
 			buildPhases = (
 				OBJ_28 /* Sources */,
 			);
@@ -236,7 +236,7 @@
 			);
 			dependencies = (
 			);
-			name = "Defaults (Package Description)";
+			name = "ScopedDefaults (Package Description)";
 			productName = DefaultsPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
@@ -265,7 +265,7 @@
 					};
 				};
 			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Defaults" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "ScopedDefaults" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -277,11 +277,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"Defaults::Defaults" /* Defaults */,
-				BF23AA4E210A114F0039834F /* Defaults (Static) */,
-				"Defaults::SwiftPMPackageDescription" /* Defaults (Package Description) */,
-				"Defaults::DefaultsPackageTests::ProductTarget" /* Defaults (Tests) */,
-				"Defaults::DefaultsTests" /* DefaultsTests */,
+				"Defaults::Defaults" /* ScopedDefaults */,
+				BF23AA4E210A114F0039834F /* ScopedDefaults (Static) */,
+				"Defaults::SwiftPMPackageDescription" /* ScopedDefaults (Package Description) */,
+				"Defaults::DefaultsPackageTests::ProductTarget" /* ScopedDefaults (Tests) */,
+				"Defaults::DefaultsTests" /* ScopedDefaultsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -330,12 +330,12 @@
 /* Begin PBXTargetDependency section */
 		OBJ_34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "Defaults::DefaultsTests" /* DefaultsTests */;
+			target = "Defaults::DefaultsTests" /* ScopedDefaultsTests */;
 			targetProxy = BF0A49722108BC570083EDF8 /* PBXContainerItemProxy */;
 		};
 		OBJ_44 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "Defaults::Defaults" /* Defaults */;
+			target = "Defaults::Defaults" /* ScopedDefaults */;
 			targetProxy = BF0A49712108BC570083EDF8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -392,7 +392,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = Defaults;
+				PRODUCT_NAME = ScopedDefaults;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.0;
@@ -447,7 +447,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = Defaults;
+				PRODUCT_NAME = ScopedDefaults;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -464,17 +464,17 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Defaults.xcodeproj/Defaults.plist;
+				INFOPLIST_FILE = ScopedDefaults.xcodeproj/ScopedDefaults.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.regexident.Defaults;
+				PRODUCT_BUNDLE_IDENTIFIER = com.regexident.ScopedDefaults;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Defaults;
+				TARGET_NAME = ScopedDefaults;
 			};
 			name = Debug;
 		};
@@ -487,17 +487,17 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Defaults.xcodeproj/Defaults.plist;
+				INFOPLIST_FILE = ScopedDefaults.xcodeproj/ScopedDefaults.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.regexident.Defaults;
+				PRODUCT_BUNDLE_IDENTIFIER = com.regexident.ScopedDefaults;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Defaults;
+				TARGET_NAME = ScopedDefaults;
 			};
 			name = Release;
 		};
@@ -506,7 +506,7 @@
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				PRODUCT_NAME = DefaultsPackageDescription;
+				PRODUCT_NAME = ScopedDefaultsPackageDescription;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -516,7 +516,7 @@
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				PRODUCT_NAME = DefaultsPackageDescription;
+				PRODUCT_NAME = ScopedDefaultsPackageDescription;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -547,14 +547,14 @@
 		OBJ_32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = Defaults_Tests;
+				PRODUCT_NAME = ScopedDefaults_Tests;
 			};
 			name = Debug;
 		};
 		OBJ_33 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = Defaults_Tests;
+				PRODUCT_NAME = ScopedDefaults_Tests;
 			};
 			name = Release;
 		};
@@ -568,13 +568,13 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Defaults.xcodeproj/DefaultsTests.plist;
+				INFOPLIST_FILE = ScopedDefaults.xcodeproj/ScopedDefaultsTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = DefaultsTests;
+				TARGET_NAME = ScopedDefaultsTests;
 			};
 			name = Debug;
 		};
@@ -588,13 +588,13 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Defaults.xcodeproj/DefaultsTests.plist;
+				INFOPLIST_FILE = ScopedDefaults.xcodeproj/ScopedDefaultsTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = DefaultsTests;
+				TARGET_NAME = ScopedDefaultsTests;
 			};
 			name = Release;
 		};
@@ -622,7 +622,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BF23AA53210A114F0039834F /* Build configuration list for PBXNativeTarget "Defaults (Static)" */ = {
+		BF23AA53210A114F0039834F /* Build configuration list for PBXNativeTarget "ScopedDefaults (Static)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF23AA54210A114F0039834F /* Debug */,
@@ -631,7 +631,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_18 /* Build configuration list for PBXNativeTarget "Defaults" */ = {
+		OBJ_18 /* Build configuration list for PBXNativeTarget "ScopedDefaults" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_19 /* Debug */,
@@ -640,7 +640,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_2 /* Build configuration list for PBXProject "Defaults" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "ScopedDefaults" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
@@ -649,7 +649,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_25 /* Build configuration list for PBXNativeTarget "Defaults (Package Description)" */ = {
+		OBJ_25 /* Build configuration list for PBXNativeTarget "ScopedDefaults (Package Description)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_26 /* Debug */,
@@ -658,7 +658,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_31 /* Build configuration list for PBXAggregateTarget "Defaults (Tests)" */ = {
+		OBJ_31 /* Build configuration list for PBXAggregateTarget "ScopedDefaults (Tests)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_32 /* Debug */,
@@ -667,7 +667,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_36 /* Build configuration list for PBXNativeTarget "DefaultsTests" */ = {
+		OBJ_36 /* Build configuration list for PBXNativeTarget "ScopedDefaultsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_37 /* Debug */,
