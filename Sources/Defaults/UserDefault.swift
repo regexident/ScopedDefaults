@@ -10,13 +10,17 @@ public protocol AnyUserDefault {
 }
 
 public protocol UserDefaultProtocol {
-    associatedtype Value
+    associatedtype Value: Codable
 
     var keyPath: String { get }
     var defaultValue: () -> Value { get }
 }
 
-public struct ScopedUserDefault<Scope: UserDefaultsScope, Value>: UserDefaultProtocol, AnyUserDefault {
+public struct ScopedUserDefault<Scope, Value>: UserDefaultProtocol, AnyUserDefault
+    where
+    Scope: UserDefaultsScope,
+    Value: Codable
+{
     public let key: String
     public let defaultValue: () -> Value
 
@@ -43,12 +47,12 @@ extension ScopedUserDefault: Equatable {
     public static func ==<Value>(
         lhs: ScopedUserDefault<Scope, Value>,
         rhs: ScopedUserDefault<Scope, Value>
-    ) -> Bool {
+        ) -> Bool {
         return lhs.key == rhs.key
     }
 }
 
-public struct UserDefault<Value>: UserDefaultProtocol, AnyUserDefault {
+public struct UserDefault<Value: Codable>: UserDefaultProtocol, AnyUserDefault {
     public let key: String
     public let defaultValue: () -> Value
 
@@ -70,7 +74,7 @@ extension UserDefault: Equatable {
     public static func ==<Value>(
         lhs: UserDefault<Value>,
         rhs: UserDefault<Value>
-    ) -> Bool {
+        ) -> Bool {
         return lhs.key == rhs.key
     }
 }

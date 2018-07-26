@@ -10,7 +10,7 @@ import Foundation
 @testable import Defaults
 
 enum Defaults: EnumerableUserDefaultsScope {
-    public typealias Default<Value> = ScopedUserDefault<Defaults, Value>
+    public typealias Default<Value: Codable> = ScopedUserDefault<Defaults, Value>
 
     static let outer: UserDefaultsScope.Type? = nil
     static let key: String = "settings"
@@ -45,7 +45,7 @@ enum Defaults: EnumerableUserDefaultsScope {
 }
 
 enum FooDefaults: EnumerableUserDefaultsScope {
-    public typealias Default<Value> = ScopedUserDefault<FooDefaults, Value>
+    public typealias Default<Value: Codable> = ScopedUserDefault<FooDefaults, Value>
 
     static let outer: UserDefaultsScope.Type? = Defaults.self
     static let key: String = "foo"
@@ -74,7 +74,7 @@ enum FooDefaults: EnumerableUserDefaultsScope {
 }
 
 enum BazDefaults: EnumerableUserDefaultsScope {
-    public typealias Default<Value> = ScopedUserDefault<BazDefaults, Value>
+    public typealias Default<Value: Codable> = ScopedUserDefault<BazDefaults, Value>
 
     static let outer: UserDefaultsScope.Type? = Defaults.self
     static let key: String = "baz"

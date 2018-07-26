@@ -53,7 +53,6 @@ public extension EnumerableUserDefaultsScope {
 
     public static func register(on userDefaults: UserDefaults) {
         let dictionary = self.factoryDefaults()
-        print(dictionary)
         userDefaults.register(defaults: dictionary)
     }
 }
