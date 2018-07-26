@@ -88,7 +88,7 @@ private struct PropertyListContainer<T>: Encodable
 }
 
 extension Encodable {
-    public func asPlist() throws -> Any {
+    func asPlist() throws -> Any {
         // See documentation for `PropertyListContainer` for why this is necessary for now:
         typealias ContainerType = PropertyListContainer<Self>
         let encoder = PropertyListEncoder()
